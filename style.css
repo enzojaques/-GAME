@@ -1,0 +1,65 @@
+#block {
+    background-color: red;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left:0px;
+    top: 367px;
+    border: 2px solid black
+}
+
+#floor {
+    background-color: green;
+    height: 200px;
+    width: 1200px;;
+    position: absolute;
+    top: 400px;
+    left: 0px;
+}
+
+#obstacle {
+    background-color: blue;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left:400px;
+    top: 367px;
+    border: 2px solid black
+}
+
+#coin {
+    background-color: yellow;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left:800px;
+    top: 300px;
+    border: 2px solid black;
+    border-radius: 100%;
+}
+
+#flag {
+    font-size: 50px;
+    position: absolute;
+    top: 340px;
+    left: 1100px;
+}
+
+.jumpAnimation {
+    animation: myJump 1s linear;
+}
+
+@keyframes myJump {
+    0% {
+      top: 365px;
+      transform: rotate(0deg);
+    }
+    50% {
+      top: 280px;
+      transform: rotate(180deg);
+    }
+    100% {
+      top: 365px;
+      transform: rotate(360deg);
+    }
+}
