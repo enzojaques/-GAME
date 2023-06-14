@@ -3,6 +3,9 @@ var obstacle = document.getElementById("obstacle");
 var coin = document.getElementById("coin");
 var flag = document.getElementById("flag");
 var floor = document.getElementById("floor");
+var startMessage = document.getElementById("startMessage");
+var nocare = document.getElementById("nocare");
+var noButton = document.getElementById("buttonNo");
 
 var timer = null;
 var isMoving = false;
@@ -12,6 +15,15 @@ var jumpInProgress = false;
 
 document.addEventListener("keydown", startAnimation);
 document.addEventListener("keyup", stopAnimation);
+
+function buttonNo(){
+    nocare.innerHTML = "I don't care";
+    noButton.style.display = "none";
+}
+
+function buttonYes(){
+    startMessage.style.display = "none";
+}
 
 function startAnimation(evt){
     if (evt.keyCode == "39") {
@@ -109,6 +121,7 @@ function checkCollision(){
         isMoving == false;
         block.style.left = 0 + "px"
         coin.style.display = "block"
+        startMessage.style.display= "block"
     }
 
     if (
@@ -131,5 +144,6 @@ function checkCollision(){
         isMoving == false;
         block.style.left = 0 + "px";
         coin.style.display = "block"
+        startMessage.style.display = "block";
     }
 }

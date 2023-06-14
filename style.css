@@ -10,8 +10,8 @@
 
 #floor {
     background-color: green;
-    height: 200px;
-    width: 1200px;;
+    height: 20px;
+    width: 100vw;;
     position: absolute;
     top: 400px;
     left: 0px;
@@ -62,4 +62,31 @@
       top: 365px;
       transform: rotate(360deg);
     }
+}
+
+#startMessage {
+    position: absolute;
+    background-color: rgb(107, 109, 109);
+    height: 40vh;
+    width: 40vw;
+    border-radius: 20px;
+    top: 20vh;
+    left: 30vw;
+    text-align: center;
+    z-index: 1;
+    font-size: 20px;
+}
+
+button{
+    border-radius: 10px;
+    height: 6vh;
+    width: 6vw;
+    background-color: white;
+    border: 2px solid black;
+    font-size: 20px;
+    font-style: italic;
+}
+
+button:hover{
+    background-color: lightgray;
 }
