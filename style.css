@@ -9,8 +9,8 @@
 }
 
 #floor {
-    background-color: green;
-    height: 20px;
+    background-color: #0FF0FC;
+    height: 5px;
     width: 100vw;;
     position: absolute;
     top: 400px;
@@ -40,8 +40,10 @@
 
 #flag {
     font-size: 50px;
+    height: 90px;
+    width: 80px;
     position: absolute;
-    top: 340px;
+    top: 310px;
     left: 1100px;
 }
 
@@ -66,7 +68,7 @@
 
 #startMessage {
     position: absolute;
-    background-color: rgb(107, 109, 109);
+    background-color: rgb(24, 211, 211);
     height: 40vh;
     width: 40vw;
     border-radius: 20px;
@@ -89,4 +91,8 @@ button{
 
 button:hover{
     background-color: lightgray;
+}
+
+body {
+    background-image: url('background.png');
 }
