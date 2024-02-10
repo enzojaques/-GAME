@@ -1,1 +1,1 @@
-Base of a game that simulates the idea of Geometry Dash.
+A basic game that simulates the idea of Geometry Dash in a 2d plan.
